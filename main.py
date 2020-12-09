@@ -33,7 +33,6 @@ if re.match(r'^.+\.png$', path) and os.path.exists(path):
     print('Максимальные значения: ')
     print(arr.max(0).max(0))
     print('Средние значения: ')
-    tmp = np.asarray([arr.size/3, arr.size/3, arr.size/3])
     print(arr.mean(0).mean(0).astype(int))
 
     toGrayscaled(arr)
